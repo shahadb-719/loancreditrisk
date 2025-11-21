@@ -45,7 +45,7 @@ business_cash_flow = st.sidebar.number_input("",min_value=0,max_value=10_000_000
 
 #standard deviation of cash flow
 cash_flow_volatility= st.sidebar.slider("Cash flow volatility (% of mean, e.g. 0.3 = 30%)",min_value=0.0,max_value=2.0,value=0.3,step=0.05)
-cash_flow_volatility = st.sidebar.number_input( "C",min_value=0.0,max_value=2.0,value=cash_flow_volatility,step=0.05)
+cash_flow_volatility = st.sidebar.number_input( "",min_value=0.0,max_value=2.0,value=cash_flow_volatility,step=0.05)
 
 
 # Monte Carlo controls
@@ -204,4 +204,5 @@ if run_sim: #checks if the simulation button is pressed (monte carlo controls)
         "each trial represents a possible future for the business, the higher \n"
         " the number of trials is the 'better' the estimate of probabilities is \n"
     )
+
               
